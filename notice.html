@@ -14,7 +14,7 @@
 	</style>
 	<body>
 		<div class="wrap">
-			<header id="header" class="header over"><!--class에 over추가-->
+			<header id="header" class="header"><!--class에 over추가-->
                 <div class="header_inner">
                     <a href="index.html" class="logo">
 						<img src="images/logo.svg">
@@ -22,7 +22,7 @@
                     <div class="gnb_wrap">
                         <nav id="gnb" class="gnb">
                             <ul class="dep1">
-                                <li class="dep1_li"><!--class에 current추가-->
+                                <li class="dep1_li">
                                     <a href="company.html" class="dep1_link">ABOUT US</a>
                                     <ul class="dep2">
                                         <li class="dep2_li">
@@ -39,17 +39,48 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dep1_li">
+                                <li class="dep1_li current">
                                     <a href="b-ASIC.html" class="dep1_link">BUSINESS</a>
                                     <ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="b-ASIC.html" class="dep2_link">ASIC Development</a>
                                         </li>
                                         <li class="dep2_li">
-                                            <a href="b-smartMeter.html" class="dep2_link">스마트 미터링 사업</a>
+                                            <a href="b-ami.html" class="dep2_link">스마트 미터링 사업</a>
+											<ul class="dep3">
+												<li class="dep3_li">
+													<a href="b-ami.html" class="dep3_link">AMI 소개</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-kepco.html" class="dep3_link">한전 저압 고압 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-apart.html" class="dep3_link">민수 AMI 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-global.html" class="dep3_link">해외 AMI 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-sm.html" class="dep3_link">스마트 미터</a>
+												</li>
+											</ul>
                                         </li>
                                         <li class="dep2_li">
                                             <a href="b-energyEfficiency.html" class="dep2_link">에너지 효율화 사업</a>
+											<ul class="dep3">
+												<li class="dep3_li">
+													<a href="b-car.html" class="dep3_link">전기차</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-LED.html" class="dep3_link">스마트 LED</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-parking.html" class="dep3_link">주차장 LED</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-gem.html" class="dep3_link">KT GEM 사업</a>
+												</li>
+											</ul>
                                         </li>
                                         <li class="dep2_li">
                                             <a href="b-waterTreatment.html" class="dep2_link">지능형 수처리 사업</a>
@@ -73,11 +104,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dep1_li current">
+                                <li class="dep1_li">
                                     <a href="notice.html" class="dep1_link">NOTICE</a>
                                     <ul class="dep2">
                                         <li class="dep2_li">
-                                            <a href="notice.html" class="dep2_link current">공지사항</a>
+                                            <a href="notice.html" class="dep2_link">공지사항</a>
                                         </li>
                                         <li class="dep2_li">
                                             <a href="news.html" class="dep2_link">NEWS</a>
@@ -88,7 +119,13 @@
                         </nav>
                     </div>
                     <div class="util_box">
-                        <img src="images/icon_lang.svg">
+						<ul>
+							<li><img src="images/icon_lang.svg"></li>
+							<li>
+								<a href="all-list.html">
+									<img src="images/icon_list.svg">
+								</a>
+							</li>
                     </div>
                 </div>
             </header>
@@ -178,7 +215,7 @@
 									<img src="images/box-arrow-up-right.svg">
 									</a>
 								</li>
-								<li><a href="contact.html">오시는 길</a></li>
+								<li><a href="map.html">오시는 길</a></li>
 							</ul>
 							<div class="col-lg-1 col-xs-12">
 								<button type="button" class="btn btn-primary">로그인</button>
