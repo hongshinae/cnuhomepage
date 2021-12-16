@@ -9,47 +9,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<title>cnuglobal</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<style>
 	</style>
 	<script type="text/javascript">
-		// $(function() {
-        //     var $title = $('tr').eq(0);
-        //     var $td1 = $('td').filter(function(index){
-        //         return index%3==0;
-        //     });
-        //     var $td2 = $('td').filter(function(index){
-        //         return index%3==1;
-        //     });
-        //     var $td3 = $('td').filter(function(index){
-        //         return index%3==2;
-        //     });
-            
-        //     $('#btn').click(function(){
-        //         $title.addClass('title');
-        //         $td1.addClass('name');
-        //         $td2.addClass('age');
-        //         $td3.addClass('addr');
-                
-        //     });
-        //     $('#reset').click(function(){
-        //         $title.removeClass();
-        //         $td1.removeClass();
-        //         $td2.removeClass();
-        //         $td3.removeClass();
-        //     });
-        // });
-		function list()
+		function listBtn()
 		{
-			('#mobile_gnb').addClass('out');
+			$('#mobile_gnb').toggleClass('out');
         }
-
-
-		// function list()
-		// {
-        //  var list1 = document.getElementById("mobile_gnb")
-		//  $list1.addClass('out');
-        // }
    </script>   
 	<body>
 		<div class="wrap">
@@ -169,7 +137,7 @@
                 </div>
 				<div class="mobile_gnb" id="mobile_gnb">
 					<div class="list-menu-btn">
-						<a href="" onclick="list();">
+						<a href="" onclick="listBtn();">
 							<img src="images/icon_list.svg">
 						</a>
 					</div>
