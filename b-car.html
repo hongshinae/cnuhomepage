@@ -9,9 +9,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<title>cnuglobal</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="js/common.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<style>
 	</style>
+	<script>
+	$('button').click(function(){
+	alert("hi");
+	});
+	</script>
 	<body>
 		<div class="wrap">
 			<header id="header" class="header"><!--class에 over추가-->
@@ -23,7 +30,8 @@
                         <nav id="gnb" class="gnb">
                             <ul class="dep1">
                                 <li class="dep1_li">
-                                    <a href="company.html" class="dep1_link">ABOUT US</a>
+									<a href="" class="dep1_link">ABOUT US</a>
+                                    <!-- <Button onclick='javascript:menu();' class="dep1_link">메뉴1</Button> -->
                                     <ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="company.html" class="dep2_link">회사 개요</a>
@@ -130,11 +138,11 @@
                 </div>
             </header>
             <div class="main-img">
-				<div class="img-sub-wrap ami"></div>
+				<div class="img-sub-wrap smartmeter"></div>
 				<div class="container">
 					<p class="mt-40">
-						실시간  수요관리 및 예측, 모니터링을 통해 자발적인 전기절약을 유도하는 <br />
-						<b>스마트 미터링 사업</b>
+						다년간 현장설치, 운영 경험으로 에너지 절감 효과를 보여주는<br />
+						<b>에너지 효율화 사업</b>
 					</p>
 				</div>
 			</div>
@@ -143,8 +151,8 @@
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><i class="home-icon"></i><a href="#">HOME</a></li>
 						<li class="breadcrumb-item"><a href="#">BUSINESS</a></li>
-						<li class="breadcrumb-item"><a href="#">스마트 미터링 사업</a></li>
-						<li class="breadcrumb-item active">AMI</li>
+						<li class="breadcrumb-item"><a href="#">에너지 효율화 사업</a></li>
+						<li class="breadcrumb-item active">과금형 EV콘센트(저속충전기)</li>
 					</ol>
 				</div>
 			</nav>
@@ -152,33 +160,71 @@
 				<div class="container">
 					<div class="row sub-box">
 						<div class="col-xl-2">
-							<h4>AMI 개요</h4>
+							<h4>사업 개요</h4>
 						</div>
 						<div class="col-xl-10">
-							<div class="mt-100">
-								<p>양방향 통신망을 이용해 전력 사용량, 시간대별 요금 정도 등 전기사용 정보를 고객에게 제공해 자발적인 전기절약을 유도하는 지능형 전력계량시스템 (AMI - Advance Metering Infrastructure)입니다
-								</p>
+							<div class="mtp-50">
+								<p>현재 승용차에 비해 전기차 보급이 저조하고 전용 충전소 구축도 부족한 상황이어서 환경부는 아파트 대상으로 EV충전기(3kW) 확대 의지를 보였습니다. CNU글로벌에서는 별도의 배전용량 증설공사 없이 설치비용 저렴하고, 설치공간도 절약되는 과금형 EV 콘센트(저속 충전기 사업을 추진중입니다.</p>
 								<br />
 							</div>
-							<img src="images/sub_ami_001.png">
+							<img src="images/sub_car_001.png" class="wd100">
 						</div>	
 					</div>
 				</div>
 			</div>
-			<div class="main-sub-cont">
+			<div class="main-sub-cont car">
 				<div class="container">
 					<div class="row sub-box">
 						<div class="col-xl-2">
-							<h4>씨앤유 글로벌의 AMI</h4>
+							<h4>아파트 EV충전 인프라 구성</h4>
 						</div>
 						<div class="col-xl-10">
 							<div class="mt-100">
-								<p>씨앤유 글로벌에서는 자체 제작한 고속 PLC기술 기반의 AMI시스템을 구성하여 제품화에 성공 하였으며, 10년 이상의 연구 개발과 현장경험을 바탕으로 탄탄한 기술력을 갖추고 있습니다.</p>
-								<p>협력사 한전의 저압, 고압 사업 그리고 대규모 단지의 민수사업, 글로벌까지 진출하여 AMI 사업의 다양하게 추진 하고 있습니다. </p>
-								<br />
+								<div class="row">
+									<div class="col-xl-6 col-md-12">
+										<p>전기 자동차 충전 인프라 운영</p>
+									</div>
+									<div class="col-xl-6 col-md-12">
+										<p>아파트 스마트 전기차 충전</p>
+										<ul>
+											<li>보안 (KCMVP)</li>
+											<li>S/W(사용량, 이벤트 등)</li>
+											<li>콘센트 통신 (IoT PLC)</li>
+											<li>서버 통신부</li>
+										</ul>
+									</div>
+								</div>
 							</div>
-							<img src="images/sub_ami_002.png">
 							<div class="h-30"></div>
+							<div class="mt-100">
+								<div class="row">
+									<div class="col-xl-6 col-md-12">
+										<div class="box-border-p">
+											<p>기존 콘센트형 충전기</p>
+											<ul>
+												<li>충전기+LTE모뎀 (1:1방식)<span class="font-rd">LTE 월이용료 발생</span></li>
+												<li>단순 충전<span class="font-rd">아파트전력관리연계X</span></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-xl-6 col-md-12">
+										<div class="box-border-p">
+											<p>아파트맞춤형 스마트EV 충전시스템</p>
+											<ul>
+												<li>충전기+유무선통신모뎀 (1:N방식)<span class="font-bl">통신이용료 대폭경감</span></li>
+												<li>스마트 충전<span class="font-bl">충전비용, 피크관리, 전기안전</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bg-gy">
+								<ul>
+									<li>충전요금 및 아파트전력 관리 연계</li>
+									<li>구축 및 운용비용 절감</li>
+								</ul>
+							</div>
+							<p>2021년 13월 제품 출시 예정 (계량기 형식 승인)</p>
 						</div>	
 					</div>
 				</div>
