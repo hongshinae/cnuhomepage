@@ -9,21 +9,23 @@
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 		<title>cnuglobal</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/common.js"></script>
 	</head>
 	<style>
-	</style>
+	</style> 
 	<body>
 		<div class="wrap">
-			<header id="header" class="header"><!--class에 over추가-->
+			<header id="header" class="header">
                 <div class="header_inner">
                     <a href="index.html" class="logo">
 						<img src="images/logo.svg">
 					</a>
                     <div class="gnb_wrap">
-                        <nav id="gnb" class="gnb">
+                        <nav id="gnb" class="gnb" onmouseover="gnbOver();" onmouseout="gnbOut();">
                             <ul class="dep1">
-                                <li class="dep1_li">
-                                    <a href="company.html" class="dep1_link">ABOUT US</a>
+                                <li id="about" class="dep1_li" onmouseover="aboutOver();" onmouseout="aboutOut();">
+                                    <a href="#" class="dep1_link">ABOUT US</a>
                                     <ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="company.html" class="dep2_link">회사 개요</a>
@@ -39,9 +41,128 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="dep1_li current">
-                                    <a href="b-ASIC.html" class="dep1_link">BUSINESS</a>
+                                <li id="business" class="dep1_li" onmouseover="businessOver();" onmouseout="businessOut();">
+                                    <a href="#" class="dep1_link">BUSINESS</a>
                                     <ul class="dep2">
+                                        <li class="dep2_li">
+                                            <a href="b-ASIC.html" class="dep2_link">ASIC Development</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="b-ami.html" class="dep2_link">스마트 미터링 사업</a>
+											<ul class="dep3">
+												<li class="dep3_li">
+													<a href="b-ami.html" class="dep3_link">AMI 소개</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-kepco.html" class="dep3_link">한전 저압 고압 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-apart.html" class="dep3_link">민수 AMI 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-global.html" class="dep3_link">해외 AMI 사업</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-sm.html" class="dep3_link">스마트 미터</a>
+												</li>
+											</ul>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="#" class="dep2_link">에너지 효율화 사업</a>
+											<ul class="dep3">
+												<li class="dep3_li">
+													<a href="b-car.html" class="dep3_link">전기차</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-LED.html" class="dep3_link">스마트 LED</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-parking.html" class="dep3_link">주차장 LED</a>
+												</li>
+												<li class="dep3_li">
+													<a href="b-gem.html" class="dep3_link">KT GEM 사업</a>
+												</li>
+											</ul>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="b-waterTreatment.html" class="dep2_link">지능형 수처리 사업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+								<li id="product" class="dep1_li" onmouseover="productOver();" onmouseout="productOut();">
+                                    <a href="#" class="dep1_link">PRODUCTS</a>
+                                    <ul class="dep2">
+                                        <li class="dep2_li">
+                                            <a href="p-ASIC.html" class="dep2_link">ASIC Development</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="p-smartMeter.html" class="dep2_link">스마트 미터링 사업</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="p-energyEfficiency.html" class="dep2_link">에너지 효율화 사업</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="p-waterTreatment.html" class="dep2_link">지능형 수처리 사업</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="notice" class="dep1_li" onmouseover="noticeOver();" onmouseout="noticeOut();">
+                                    <a href="#" class="dep1_link">NOTICE</a>
+                                    <ul class="dep2">
+                                        <li class="dep2_li">
+                                            <a href="notice.html" class="dep2_link">공지사항</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="news.html" class="dep2_link">NEWS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="util_box">
+						<ul>
+							<li><img src="images/icon_lang.svg"></li>
+							<li>
+								<a href="#" onmouseover="gnbOver();" onmouseout="gnbOut();">
+									<img src="images/icon_list.svg">
+								</a>
+							</li>
+                    </div>
+                </div>
+				<div class="mobile_gnb" id="mobile_gnb">
+					<div class="list-menu-btn">
+						<a href="#" onclick="listBtn();">
+							<img src="images/icon_list.svg">
+						</a>
+					</div>
+					<div class="mobile_gnb_list" id="mobile_gnb_list">
+						<div class="d-flex align-items-start">
+							<div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
+								<button class="nav-link active" id="v-aboutus-tab" data-bs-toggle="pill" data-bs-target="#v-aboutus" type="button" role="tab" aria-controls="v-aboutus" aria-selected="true">ABOUT US</button>
+								<button class="nav-link" id="v-business-tab" data-bs-toggle="pill" data-bs-target="#v-business" type="button" role="tab" aria-controls="v-business" aria-selected="false">BUSINESS</button>
+								<button class="nav-link" id="v-products-tab" data-bs-toggle="pill" data-bs-target="#v-products" type="button" role="tab" aria-controls="v-products" aria-selected="false">PRODUCTS</button>
+								<button class="nav-link" id="v-notice-tab" data-bs-toggle="pill" data-bs-target="#v-notice" type="button" role="tab" aria-controls="v-notice" aria-selected="false">NOTICE</button>
+							</div>
+							<div class="tab-content" id="v-tabContent">
+								<div class="tab-pane fade show active" id="v-aboutus" role="tabpanel" aria-labelledby="v-aboutus-tab">
+									<ul class="dep2">
+                                        <li class="dep2_li">
+                                            <a href="company.html" class="dep2_link">회사 개요</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="history.html" class="dep2_link">회사 연혁</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="ci.html" class="dep2_link">CI</a>
+                                        </li>
+                                        <li class="dep2_li">
+                                            <a href="patent.html" class="dep2_link">특허</a>
+                                        </li>
+                                    </ul>
+								</div>
+								<div class="tab-pane fade" id="v-business" role="tabpanel" aria-labelledby="v-business-tab">
+									<ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="b-ASIC.html" class="dep2_link">ASIC Development</a>
                                         </li>
@@ -86,10 +207,9 @@
                                             <a href="b-waterTreatment.html" class="dep2_link">지능형 수처리 사업</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="dep1_li">
-                                    <a href="p-ASIC.html" class="dep1_link">PRODUCTS</a>
-                                    <ul class="dep2">
+								</div>
+								<div class="tab-pane fade" id="v-products" role="tabpanel" aria-labelledby="v-products-tab">
+									<ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="p-ASIC.html" class="dep2_link">ASIC Development</a>
                                         </li>
@@ -103,10 +223,9 @@
                                             <a href="p-waterTreatment.html" class="dep2_link">지능형 수처리 사업</a>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="dep1_li">
-                                    <a href="notice.html" class="dep1_link">NOTICE</a>
-                                    <ul class="dep2">
+								</div>
+								<div class="tab-pane fade" id="v-notice" role="tabpanel" aria-labelledby="v-notice-tab">
+									<ul class="dep2">
                                         <li class="dep2_li">
                                             <a href="notice.html" class="dep2_link">공지사항</a>
                                         </li>
@@ -114,20 +233,11 @@
                                             <a href="news.html" class="dep2_link">NEWS</a>
                                         </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="util_box">
-						<ul>
-							<li><img src="images/icon_lang.svg"></li>
-							<li>
-								<a href="all-list.html">
-									<img src="images/icon_list.svg">
-								</a>
-							</li>
-                    </div>
-                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </header>
             <div class="main-img">
 				<div class="img-sub-wrap img-footer"></div>

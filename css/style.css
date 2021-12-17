@@ -115,7 +115,6 @@ ul.dep1 {margin-bottom: 0;}
 
 /* gnb */
 .mobile_gnb_list {width: 100%;height:100vh ;;background: #fff;}
-.mobile_gnb_list .d-flex.align-items-start {}
 .mobile_gnb_list div#v-tab {margin-left: 1rem;margin-right: 2rem!important;padding-top: 20px;height: 100vh;width: 127px;padding-right: 10px;border-right:1px solid #ddd;}
 
 .mobile_gnb_list button {border: 0;background: #fff;font-size: 14px;color: #0f1d36;text-align: left;margin-bottom: 10px;}
@@ -329,7 +328,7 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
 .box-border-p ul li span {float: right;}
 .box-border-p .arrow-list {height: 117px;}
 
-.mobile_gnb.out {display: none;}
+.mobile_gnb_list.out {display: none;}
 
 @media (max-width: 995px) {
   .dep1 {display: none;}
