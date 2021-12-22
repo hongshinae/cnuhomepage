@@ -440,5 +440,12 @@ body {font-size: 90%;}
 .main-thinking ul {display: block;}
 .main-thinking ul li {width: 72%;margin: 4% 15%;}
 .main-thinking ul li img {width: 59px;}
+
+.main-news-list .add-btn{display: none;}
+.main-news-list li .title {width: 100%;}
+.main-news-list li .title p {font-size: 12px !important;}
+.main-news-list li .date {width: inherit;display: none;}
+.main-news-list li .date .day {display: inline;font-size: 12px;height: inherit;line-height: inherit;color: #adadad;float: right;font-weight: normal;padding-left: 7px;}
+.main-news-list li .date .yrmt {display: inline;font-size: 12px;}
 }
 
