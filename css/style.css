@@ -44,6 +44,7 @@ ol, ul {padding-left: 0 !important;}
 .font-bl {color:#0397d6}
 .bg-gy {background: #f3f3f3;}
 .box-border {padding: 4% 3%;border: 1px solid #cbcbcb;}
+.box-border .box-img-wrap {}
 .box-border-p {border: 1px solid #cbcbcb;}
 .box-bl {text-align: center;padding: 18px;font-weight: bold;margin-bottom: 20px;background: #0397d6;color: #ffffff;}
 
@@ -160,7 +161,6 @@ ul.dep1 {margin-bottom: 0;}
 .warer {background: url("../images/sub_img_warer.png");}
 .img-footer {background: url("../images/sub_img_footer.png");}
 
-.main-img .mt-40 {/* top: 122px !important; */}
 
 .main-thinking {width: 100%;margin: 100px 0 60px 0;}
 .main-thinking ul {display: flex;margin-bottom: 50px;padding-left: 0;}
@@ -168,7 +168,7 @@ ul.dep1 {margin-bottom: 0;}
 .main-thinking ul li img {width:100px;}
 
 .tag {margin: 0 8%;text-align: center;}
-.tag a {background: #dfdfdf;color: #939393;font-size: 14px;height: 14px;line-height: 34px;margin: 2px 2px;padding: 4px 13px;border-radius: 20px;text-decoration: none;}
+.tag a {background: #dfdfdf;color: #939393;font-size: 14px;height: 14px;line-height: 34px;margin: 2px 2px;word-break: keep-all;padding: 4px 13px;border-radius: 20px;text-decoration: none;}
 
 .main-companyimg {width: 100%;padding-bottom: 100px;background: #f5f5f5;padding-top: 80px;}
 .main-companyimg h5 {text-align: center;font-size: 18px;margin-bottom: 20px;}
@@ -297,13 +297,14 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
 .year_list {font-weight: normal;font-size: 14px;}
 .year_list li {height: 28px;}
 
-.grid {position: relative;padding: 85px 10px 60px 10px;margin: 0 auto;display: flex;justify-content: space-evenly;}
+.grid {position: relative;padding: 85px 10px 60px 10px;margin: 0 auto;display: flex;justify-content: space-evenly;flex-direction: row;flex-wrap: wrap;}
 .grid::after {position: absolute;top: 65px;right: 80px;left: 46px;content: '';height: 1px;background-color: #e3e3e3;}
 .grid .section {width:15%;float: left;text-align: center;margin-bottom: 30px;position: relative;}
 .grid .section h5::before {position: absolute;top: -22px;left: 50%;background-color: #d9d9d9;display: inline-block;width: 6px;height: 6px;-webkit-border-radius: 50%;border-radius: 50%;vertical-align: top;content: '';} 
 .grid .section h5 {font-size: 16px;text-align: center;}
 .grid .section img {width: 45px !important;;}
 .grid .section title {display: block;text-align: center;font-size: 16px;margin-bottom: 14px;}
+.grid .section .arrow-list {padding-left: 10% !important;}
 .grid .section .arrow-list li {font-size: 14px;text-align: left;}
 
 .arrow-list {margin-bottom: 0px;}
@@ -409,7 +410,12 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
   .box-border-p {margin-bottom: 10px;}
   .history button p:last-child {display: none;}
   .history button {height: 83px;}
-  
+  .f-logo {justify-content: unset;}
+  .footer_link .col-lg-1.col-xs-12 {margin-top: 20px;padding-left: 0;}
+  .copyright .col-lg-4.col-xs-12 {padding-left: 0;}
+  .f-logo img {width: 200px;}
+
+
 }
 
 
@@ -424,6 +430,10 @@ body {font-size: 90%;}
 .main-title {font-size: 16px;}
 .sub-title {font-size: 14px;}
 .main-thinking {font-size: 12px;}
+.main-companyimg h5 {font-size: 14px;}
+.tag {margin: 0 !important;}
+.tag a {font-size: 12px;}
+ 
 
 .b-car-plus::before {background: none;}
 .b-LED .box-border {margin-bottom: 20px;}
@@ -431,6 +441,8 @@ body {font-size: 90%;}
 .breadcrumb-item {display: none;}  
 .breadcrumb-item:first-child {display: block;}  
 .breadcrumb-item:last-child {display: block;}  
+
+.grid .section {width:50%;}
 }
 
 @media (max-width: 430px) {
@@ -442,10 +454,13 @@ body {font-size: 90%;}
 .main-thinking ul li img {width: 59px;}
 
 .main-news-list .add-btn{display: none;}
+.main-news-list li {wheight: 82px;}
 .main-news-list li .title {width: 100%;}
-.main-news-list li .title p {font-size: 12px !important;}
 .main-news-list li .date {width: inherit;display: none;}
 .main-news-list li .date .day {display: inline;font-size: 12px;height: inherit;line-height: inherit;color: #adadad;float: right;font-weight: normal;padding-left: 7px;}
 .main-news-list li .date .yrmt {display: inline;font-size: 12px;}
+
+.grid .section {width:100%;}
+
 }
 
