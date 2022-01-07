@@ -44,7 +44,7 @@ ol, ul {padding-left: 0 !important;}
 .font-bl {color:#0397d6}
 .bg-gy {background: #f3f3f3;}
 .box-border {padding: 4% 3%;border: 1px solid #cbcbcb;}
-.box-border .box-img-wrap {}
+.flex-center {display: flex;justify-content: center;}
 .box-border-p {border: 1px solid #cbcbcb;}
 .box-bl {text-align: center;padding: 18px;font-weight: bold;margin-bottom: 20px;background: #0397d6;color: #ffffff;}
 
@@ -250,11 +250,15 @@ footer {background: #333333;}
 .green {background: #bfd600;}
 .grey {background: #666666;}
 .blue {background: #0099cc;}
+.box-border.flex-center.logo-wrap img {width: 320px;height: 160px;}
+a.button {cursor: pointer;color: #5a5a5a;text-decoration: none;}
+a.button:hover {background: #b0b0b0;border: #000000;color: #ffffff;}
+a.button:last-child {margin-left: 10px;}
 
 .box-wrap {position: relative;}
 .box-wrap h5 {height: 40px;line-height: 40px;margin-bottom: 14px;}
 .box-wrap h5 span {font-size: 14px;margin-left: 10px;}
-.btn-wrap {position:absolute;top:0;right: 0;}
+.btn-wrap {position:absolute;top: 8px;right: 0;}
 .box-wrap .col-xl-4 {text-align: center;vertical-align: middle;}
 .button {border: 1px solid #cccccc;background: #fff;padding: 7px 27px;} 
 .button svg {margin-right: 10px;}
@@ -340,6 +344,12 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
 .global-bg .box-wrap .blackbox {background: #202322;width: 323px;height: 200px;margin-bottom: 100px;box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%), inset 0 -1px 0 rgb(0 0 0 / 20%);}
 .global-bg .box-wrap .blackbox h6 {text-align: center;color: #ffffff;margin-top: 45px;}
 .global-bg .box-wrap .blackbox p {text-align: center;color:#bcbcbc;margin-top: 35px;}
+
+.global-btn {margin-top: 120px;}
+.global-btn li {margin-bottom: 20px;}
+.global-btn button {border: none;background: none;}
+.global-btn button:hover {color: #0397d6;}
+.global-btn button.over {color: #0397d6;}
 
 .b-sm .bg-gy {display: flex;justify-content: space-around;height: 50px;line-height: 50px;border-radius: 30px;}
 .b-sm .bg-gy li {float: left;margin-bottom: 0;}
@@ -454,7 +464,7 @@ body {font-size: 90%;}
 .main-thinking ul li img {width: 59px;}
 
 .main-news-list .add-btn{display: none;}
-.main-news-list li {wheight: 82px;}
+.main-news-list li {height: 82px;}
 .main-news-list li .title {width: 100%;}
 .main-news-list li .date {width: inherit;display: none;}
 .main-news-list li .date .day {display: inline;font-size: 12px;height: inherit;line-height: inherit;color: #adadad;float: right;font-weight: normal;padding-left: 7px;}
