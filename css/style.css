@@ -441,7 +441,7 @@ body {font-size: 90%;}
 .sub-title {font-size: 14px;}
 .main-thinking {font-size: 12px;}
 .main-companyimg h5 {font-size: 14px;}
-.tag {margin: 0 !important;}
+.tag {/* margin: 0 !important; */}
 .tag a {font-size: 12px;}
  
 
@@ -459,11 +459,20 @@ body {font-size: 90%;}
 .main-img .container p {font-size: 12px;}
 .main-img .container p b{font-size: 14px;}
 .main-companyimg h5 {font-size: 14px;}
+.main-thinking {margin: 50px 0 60px 0;}
 .main-thinking ul {display: block;}
-.main-thinking ul li {width: 72%;margin: 4% 15%;}
+.main-thinking ul li {width: 55%;margin: 4% auto 7%;}
 .main-thinking ul li img {width: 59px;}
 
+
+.main-besiness {margin: 50px 0 60px 0;}
+.main-besiness ul.list {padding: 0 30px !important;}
+.main-besiness ul.list ul {margin: 5px 0 30px 0;}
+.main-besiness ul.list ul li{margin-bottom: 2px;}
+.main-besiness ul.list {margin: 47px 0 50px 0;}
+
 .main-news-list .add-btn{display: none;}
+.main-news .btn-go {height: 61px;display: block;}
 .main-news-list li {height: 82px;}
 .main-news-list li .title {width: 100%;}
 .main-news-list li .date {width: inherit;display: none;}
@@ -471,6 +480,8 @@ body {font-size: 90%;}
 .main-news-list li .date .yrmt {display: inline;font-size: 12px;}
 
 .grid .section {width:100%;}
+
+footer {padding: 0 20px;}
 
 }
 
