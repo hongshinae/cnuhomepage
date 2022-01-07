@@ -471,6 +471,7 @@ body {font-size: 90%;}
 .main-besiness ul.list ul li{margin-bottom: 2px;}
 .main-besiness ul.list {margin: 47px 0 50px 0;}
 
+.main-news-list {padding: 0 10px !important;}
 .main-news-list .add-btn{display: none;}
 .main-news .btn-go {height: 61px;display: block;}
 .main-news-list li {height: 82px;}
@@ -482,6 +483,6 @@ body {font-size: 90%;}
 .grid .section {width:100%;}
 
 footer {padding: 0 20px;}
-
+.f-logo {display: none;}
 }
 
