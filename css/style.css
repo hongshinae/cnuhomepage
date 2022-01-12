@@ -119,14 +119,14 @@ ul.dep1 {margin-bottom: 0;}
 
 /* gnb */
 .mobile_gnb_list {width: 100%;display: none;height:100vh;background: #fff;}
-.mobile_gnb_list div#v-tab {margin-left: 1rem;margin-right: 2rem!important;padding-top: 20px;height: 100vh;width: 127px;padding-right: 10px;border-right:1px solid #ddd;}
+.mobile_gnb_list div#v-tab {margin-right: 2rem!important;padding-top: 20px;height: 100vh;width: 110px;padding-left: 0;background: #f6f6f6;}
 
-.mobile_gnb_list button {border: 0;background: #fff;font-size: 14px;color: #0f1d36;text-align: left;margin-bottom: 10px;}
+.mobile_gnb_list button {border: 0;background: #f6f6f6;font-size: 12px;color: #0f1d36;text-align: left;margin-bottom: 10px;}
 .mobile_gnb_list button.active {color: #0f1d36;font-weight: bold;}
 
-.mobile_gnb_list .dep2 {margin-top: 27px;}
+.mobile_gnb_list .dep2 {margin-top: 25px;}
 .mobile_gnb_list .dep2 li {margin-bottom: 17px;}
-.mobile_gnb_list .dep2 li a {color: #0f1d36;font-size: 16px;text-decoration:none;}
+.mobile_gnb_list .dep2 li a {color: #0f1d36;font-size: 14px;text-decoration:none;}
 
 .mobile_gnb_list .dep3 {margin-top: 20px;margin-bottom: 20px;margin-left: 20px;}
 .mobile_gnb_list .dep3 li a  {color: #6c757d;font-size: 14px;}
@@ -176,7 +176,8 @@ ul.dep1 {margin-bottom: 0;}
 
 .main-besiness {width: 100%;margin: 100px 0 60px 0;}
 .main-besiness h6 {font-weight: bold;color: #161c2d;font-size: 18px;margin-left: 5px;}
-.main-besiness ul.list {margin: 47px 0 200px 0;}
+.main-besiness ul.list {display: flex;margin: 47px 0 200px 0;flex-direction: row;flex-wrap: wrap;}
+.main-besiness ul.list .list-box {width: 25%;padding: 0 0.5%;}
 .main-besiness ul.list img {width: 100%;border-radius: 4px;}
 
 .main-besiness ul.list ul {margin: 20px 0;}
@@ -199,7 +200,8 @@ ul.dep1 {margin-bottom: 0;}
 .main-news-list li .title p:last-child {font-size: 14px; color: #bec1c4;}
 .main-news-list li .add-btn {width: 100px;float: right;text-align: center;margin-top: 28px;}
 .main-news-list li .add-btn img {width: 22px;}
-
+.main-news-list a {color: #212529;}
+.main-news-list a:hover {color: #007fff;}
 
 footer {background: #333333;}
 .footer_link {border-bottom:1px solid #414141;padding: 40px 0;}
@@ -420,10 +422,12 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
   .box-border-p {margin-bottom: 10px;}
   .history button p:last-child {display: none;}
   .history button {height: 83px;}
+
+  .main-besiness ul.list .list-box {width: 50%;padding: 0 1%;}
   .f-logo {justify-content: unset;}
-  .footer_link .col-lg-1.col-xs-12 {margin-top: 20px;padding-left: 0;}
-  .copyright .col-lg-4.col-xs-12 {padding-left: 0;}
-  .f-logo img {width: 200px;}
+  .footer_link .col-lg-1.col-xs-12 {margin-top: 20px;padding-left: 2rem;}
+  .f-logo {margin-bottom: 20px;padding-left: 1.2rem;}
+  .f-logo img {width: 156px;}
 
 
 }
@@ -441,9 +445,11 @@ body {font-size: 90%;}
 .sub-title {font-size: 14px;}
 .main-thinking {font-size: 12px;}
 .main-companyimg h5 {font-size: 14px;}
-.tag {/* margin: 0 !important; */}
 .tag a {font-size: 12px;}
  
+.main-besiness h6 {font-size: 12px;}
+.main-besiness ul.list .list-box {margin-bottom: 20px;}
+.business-list {display: none;}
 
 .b-car-plus::before {background: none;}
 .b-LED .box-border {margin-bottom: 20px;}
@@ -451,8 +457,13 @@ body {font-size: 90%;}
 .breadcrumb-item {display: none;}  
 .breadcrumb-item:first-child {display: block;}  
 .breadcrumb-item:last-child {display: block;}  
-
+footer ul {padding-left: 2rem !important;}
 .grid .section {width:50%;}
+
+.breadcrumb-nav {height: 40px;}
+.breadcrumb-item {height: 38px;line-height: 38px;}
+.breadcrumb-item+.breadcrumb-item::before {margin-top: 11px;}
+.breadcrumb-item, .breadcrumb-item a {font-size: 12px;}
 }
 
 @media (max-width: 430px) {
@@ -463,7 +474,6 @@ body {font-size: 90%;}
 .main-thinking ul {display: block;}
 .main-thinking ul li {width: 55%;margin: 4% auto 7%;}
 .main-thinking ul li img {width: 59px;}
-
 
 .main-besiness {margin: 50px 0 60px 0;}
 .main-besiness ul.list {padding: 0 30px !important;}
@@ -482,7 +492,8 @@ body {font-size: 90%;}
 
 .grid .section {width:100%;}
 
-footer {padding: 0 20px;}
+.footer {padding: 0 20px;}
+footer ul {padding-left: 2rem !important;}
 .f-logo {display: none;}
 }
 
