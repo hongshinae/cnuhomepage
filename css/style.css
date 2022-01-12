@@ -188,13 +188,13 @@ ul.dep1 {margin-bottom: 0;}
 .main-news {width: 100%;margin-bottom: 150px;}
 .main-news .main-title {text-align: left;}
 .main-news .sub-title {text-align: left;font-size: 14px;}
-.main-news .btn-go {color: #212529;font-size: 14px;text-decoration: none;}
+.main-news .btn-go {color: #212529;font-size: 14px;margin-bottom: 27px;height: 20px;display: block;text-decoration: none;}
 
 .main-news-list li {height: 83px;margin-bottom: 10px;border-bottom:1px solid #eeeeee;}
 .main-news-list li .date {width: 100px;float: left;}
 .main-news-list li .date .day {display: block;font-size: 18px;height: 40px;line-height: 40px;color: #0099cc;font-weight: bold;text-align: center;}
 .main-news-list li .date .yrmt {display: block;font-size: 14px;color: #adadad;text-align: center;}
-.main-news-list li .title {float: left;width: calc(100% - 200px);}
+.main-news-list li .title {float: left;width: calc(100% - 150px);}
 .main-news-list li .title p{margin-bottom: 0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;}
 .main-news-list li .title p:first-child {font-size: 18px;font-weight: bold;margin-top: 7px;margin-bottom: 7px;}
 .main-news-list li .title p:last-child {font-size: 14px; color: #bec1c4;}
@@ -429,6 +429,8 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
   .f-logo {margin-bottom: 20px;padding-left: 1.2rem;}
   .f-logo img {width: 156px;}
 
+  .main-news-list li .add-btn {width: 50px;}
+
 
 }
 
@@ -460,10 +462,12 @@ body {font-size: 90%;}
 footer ul {padding-left: 2rem !important;}
 .grid .section {width:50%;}
 
-.breadcrumb-nav {height: 40px;}
+.breadcrumb-nav {height: 40px;background: #f8f8f8;}
 .breadcrumb-item {height: 38px;line-height: 38px;}
 .breadcrumb-item+.breadcrumb-item::before {margin-top: 11px;}
 .breadcrumb-item, .breadcrumb-item a {font-size: 12px;}
+
+
 }
 
 @media (max-width: 430px) {
@@ -495,5 +499,9 @@ footer ul {padding-left: 2rem !important;}
 .footer {padding: 0 20px;}
 footer ul {padding-left: 2rem !important;}
 .f-logo {display: none;}
+
+.main-sub-cont h4 {margin-top: 35px;}
+.mt-100 {margin-top: 35px;}
+
 }
 
