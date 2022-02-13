@@ -12,8 +12,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="js/common.js"></script>
 	</head>
-	<style>
-	</style> 
+	<script>
+		let mainText = document.querySelector(".img-3d");
+
+window.addEventListener("scroll", function() {
+    let value = window.scrollY;
+    console.log("scrollY", value);
+    if (value > 900) {
+      mainText.style.animation = "img-slideout 1s ease-out forwards"
+    } else {
+      mainText.style.animation = "img-slidein 1s ease-out"
+    }
+  }
+);
+	</script>
 	<body>
 		<div class="wrap">
 			<header id="header" class="header">
@@ -242,7 +254,7 @@
             <div class="main-img">
 				<div class="img-main-wrap"></div>
 				<div class="container">
-					<p>
+					<p class="main-text">
 						기술 기반의 플랫폼으로 최적화된 그린 에너지 시스템을 제공하는<br />
 						<b>Green Energy Company CNU GLOBAL</b>
 					</p>
@@ -284,7 +296,9 @@
 						<a href="" target="_blank"># 지능형 소규모 수도시설 사업</a>
 						<a href="" target="_blank"># 과금형 EV콘센트</a>
 					</div>
-					<img src="images/main_3d.svg">
+					<div class="img-3d">
+						<img src="images/main_3d.svg">
+					</div>
 				</div>
 			</div>
 			<div class="main-besiness">

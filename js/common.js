@@ -48,3 +48,6 @@ function noticeOut()
 {
   $('#notice').removeClass('current');
 };
+
+//
+
