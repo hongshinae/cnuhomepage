@@ -336,14 +336,16 @@ ul#myTab {padding-right: 0 !important;}
 .patent .ul#myTab {flex-wrap: nowrap;}
 .patent li.nav-item {width: 33.33333%;}
 .patent .nav-tabs .nav-link {width: 100%;}
-.patent .tab-content {height: 550px;margin-bottom: 50px;}
+.patent .tab-content {min-height: 550px;margin-bottom: 50px;}
+.patent table tr td:first-child {width: 120px;text-align: center;}
+.patent table tr td:last-child {width: 110px;text-align: center;} 
 
 .kepco .ul#myTab {flex-wrap: nowrap;}
 .kepco .nav-tabs .nav-link {width: 100%;}
 .kepco  li.nav-item {width: 50%;}
 
 table {width: 100%;margin-top: 20px;margin-bottom: 20px;border-top:2px solid #cccccc;}
-table tr td {border-bottom:1px solid #eeeeee;padding: 20px 8px;}
+table tr td {border-bottom:1px solid #eeeeee;padding: 20px 8px;vertical-align: middle;}
 table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5px ;text-align: center;}
 
 .notice-wrap {margin-top: 20px !important;margin-bottom: 50px;border-bottom: 1px solid #ddd;}
