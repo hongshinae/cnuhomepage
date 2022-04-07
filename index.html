@@ -11,21 +11,9 @@
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="js/common.js"></script>
-	</head>
-	<script>
-		let mainText = document.querySelector(".img-3d");
+		<script src="js/main.js"></script>
 
-window.addEventListener("scroll", function() {
-    let value = window.scrollY;
-    console.log("scrollY", value);
-    if (value > 900) {
-      mainText.style.animation = "img-slideout 1s ease-out forwards"
-    } else {
-      mainText.style.animation = "img-slidein 1s ease-out"
-    }
-  }
-);
-	</script>
+	</head>
 	<body>
 		<div class="wrap">
 			<header id="header" class="header">
@@ -296,8 +284,8 @@ window.addEventListener("scroll", function() {
 						<a href="" target="_blank"># 지능형 소규모 수도시설 사업</a>
 						<a href="" target="_blank"># 과금형 EV콘센트</a>
 					</div>
-					<div class="img-3d">
-						<img src="images/main_3d.svg">
+					<div>
+						<img src="images/main_3d.svg" class="img-3d">
 					</div>
 				</div>
 			</div>
