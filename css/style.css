@@ -462,6 +462,13 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
 .water-st .col-xl-6:last-child {background: url("../images/icon_sad.svg") no-repeat;}
 .water-st .col-xl-6 p {font-weight: bold;}
 
+@media (max-width: 1395px) {
+  .gnb_wrap {padding: 0 0 0 110px;}
+  .gnb .dep1_li {padding: 32px 15px 0;}
+  .gnb .dep2_link {font-size: 14px;}
+}
+
+
 @media (max-width: 1270px) {
   .grid .section { width: 33.3%;}
   .main-thinking ul li {margin: 3% 3%;}
