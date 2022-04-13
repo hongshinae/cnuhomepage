@@ -22,22 +22,40 @@ function aboutOut()
   $('#about').removeClass('current');
 };
 
-function businessOver()
+function asicOver()
 {
-  $('#business').addClass('current');
+  $('#asic').addClass('current');
 };
-function businessOut()
+function asicOut()
 {
-  $('#business').removeClass('current');
+  $('#asic').removeClass('current');
 };
 
-function productOver()
+function smartmeterOver()
 {
-  $('#product').addClass('current');
+  $('#smartmeter').addClass('current');
 };
-function productOut()
+function smartmeterOut()
 {
-  $('#product').removeClass('current');
+  $('#smartmeter').removeClass('current');
+};
+
+function energyOver()
+{
+  $('#energy').addClass('current');
+};
+function energyOut()
+{
+  $('#energy').removeClass('current');
+};
+
+function waterOver()
+{
+  $('#water').addClass('current');
+};
+function waterOut()
+{
+  $('#water').removeClass('current');
 };
 
 function noticeOver()

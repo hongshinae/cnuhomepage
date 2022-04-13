@@ -90,7 +90,7 @@ table a {color: #333;text-decoration: none;}
 .gnb_wrap{padding: 0 103px 0 170px; text-align: center;}
 .gnb{display: inline-block;}
 ul.dep1 {margin-bottom: 0;}
-.gnb .dep1_li{display: inline-block;position: relative;height: 80px;padding: 32px 58px 0;}
+.gnb .dep1_li{display: inline-block;position: relative;height: 80px;padding: 32px 30px 0;}
 .gnb .dep1_li:first-child{margin-left: 0;}
 .gnb .dep1_link{display: inline-block;font-size: 14PX;-webkit-transition: color .2s linear;transition: color .2s linear;text-decoration: none;color: #161c2d;}
 .gnb .dep1_link:before{display: block;position: absolute;top: 80px;left: 50%;width: 0;height: 2px;background-color: #009ade;content: "";-webkit-transform: translateX(-50%);transform: translateX(-50%);-webkit-transition: width .2s ease-in-out;transition: width .2s ease-in-out;}
@@ -119,7 +119,7 @@ ul.dep1 {margin-bottom: 0;}
 
 /* gnb */
 .mobile_gnb_list {width: 100%;display: none;height:100vh;background: #fff;}
-.mobile_gnb_list div#v-tab {margin-right: 2rem!important;padding-top: 20px;height: 100vh;width: 110px;padding-left: 0;background: #f6f6f6;}
+.mobile_gnb_list div#v-tab {margin-right: 2rem!important;padding-top: 20px;height: 100vh;width: 150px;padding-left: 0;background: #f6f6f6;}
 
 .mobile_gnb_list button {border: 0;background: #f6f6f6;font-size: 12px;color: #0f1d36;text-align: left;margin-bottom: 10px;}
 .mobile_gnb_list button.active {color: #0f1d36;font-weight: bold;}
@@ -360,7 +360,6 @@ table tr th {border-bottom:1px solid #eeeeee;background: #f6f6f6;padding: 20px 5
 .news.main-sub-cont p {margin-top: 0;}
 
 .year_list {font-weight: normal;font-size: 14px;}
-.year_list li {/* height: 28px; */}
 
 .grid {position: relative;padding: 85px 10px 60px 10px;margin: 0 auto;display: flex;justify-content: space-evenly;flex-direction: row;flex-wrap: wrap;}
 .grid::after {position: absolute;top: 65px;right: 80px;left: 46px;content: '';height: 1px;background-color: #e3e3e3;}
@@ -576,6 +575,7 @@ ul#myTab {width: 94%;margin: 0 auto;}
 .patent .nav-tabs .nav-link {padding: 0;}
 .patent .nav-tabs .nav-link p {font-size: 12px;}
 table {font-size: 12px;}
+table.text-center {text-align: center;}
 
 .grid {padding: 25px 10px 25px 10px;}
 .grid .section h5::before {display: none;}
