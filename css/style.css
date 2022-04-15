@@ -90,7 +90,7 @@ table a {color: #333;text-decoration: none;}
 .gnb_wrap{padding: 0 103px 0 170px; text-align: center;}
 .gnb{display: inline-block;}
 ul.dep1 {margin-bottom: 0;}
-.gnb .dep1_li{display: inline-block;position: relative;height: 80px;padding: 32px 30px 0;}
+.gnb .dep1_li{display: inline-block;position: relative;height: 80px;padding: 32px 35px 0;}
 .gnb .dep1_li:first-child{margin-left: 0;}
 .gnb .dep1_link{display: inline-block;font-size: 14PX;-webkit-transition: color .2s linear;transition: color .2s linear;text-decoration: none;color: #161c2d;}
 .gnb .dep1_link:before{display: block;position: absolute;top: 80px;left: 50%;width: 0;height: 2px;background-color: #009ade;content: "";-webkit-transform: translateX(-50%);transform: translateX(-50%);-webkit-transition: width .2s ease-in-out;transition: width .2s ease-in-out;}
